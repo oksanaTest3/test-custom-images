@@ -8,7 +8,7 @@ install: skip
 jobs:
   include:
     - name: testing
-      script: true
+      script: false
 
 after_success:
   - echo passed
