@@ -2,5 +2,5 @@ vm:
   use: test-custom-images-i1
 
 script:
-  - echo "Checking if custom file exists"
-  - sudo cat /my-custom-dir/my_custom_file.txt
+  - echo "Forcing build failure"
+  - exit 1
