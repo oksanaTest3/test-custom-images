@@ -1,6 +1,5 @@
 vm:
-  use: test-custom-images-i1
+  use: oksanaTest3-i3
 
 script:
-  - echo "Forcing build failure"
-  - exit 1
+  - echo "Test"
