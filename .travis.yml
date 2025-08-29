@@ -2,4 +2,4 @@ vm:
   use: oksanaTest3-i3
 
 script:
-  - echo "Test"
+  - echo "Test2"
