@@ -1,53 +1,6 @@
-os: linux
-language: generic
-dist: focal
+vm:
+  use: oksanaTest3-i3
 
-jobs:
-  include:
-    - stage: "Tests"
-      name: "Create custom image 1"
-      vm:
-        create:
-          name: os: linux
-language: generic
-dist: focal
-
-jobs:
-  include:
-    - stage: "Tests"
-      name: "Create custom image 1"
-      vm:
-        create:
-          name: test-custom-images-i3
-      script:
-        - echo "Running Job 1"
-    - stage: "Tests"
-      name: "Create custom image 2"
-      vm:
-        create:
-          name: test-custom-images-i4
-      script:
-        - echo "Running Job 2"
-    - stage: "Tests"
-      name: "Create custom image 3"
-      vm:
-        create:
-          name: test-custom-images-i5
-      script:
-        - echo "Running Job 3"
-    - stage: "Tests"
-      name: "Create custom image 4"
-      vm:
-        create:
-          name: test-custom-images-i6
-      script:
-        - echo "Running Job 4"
-    - stage: "Tests"
-      name: "Create custom image 5"
-      vm:
-        create:
-          name: test-custom-images-i7
-      script:
-        - echo "Running Job 5"
-
-
+script:
+  - echo "Checking if custom file exists"
+  - sudo cat /my-custom-dir/my_custom_file.txt
