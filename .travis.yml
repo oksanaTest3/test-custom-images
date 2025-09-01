@@ -1,6 +1,6 @@
-#test3
+#test1
 vm:
-  use: oksanaTest3-i3
+  use: test-custom-images-i2
 
 script:
   - echo "Checking if custom file exists"
